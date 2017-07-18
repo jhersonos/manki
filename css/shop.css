@@ -601,11 +601,13 @@ form .row{
         width: 90%;
         display: inline-block;
         margin-top: 0;
+        margin-bottom: 0;
     }
     #wrapper .price {
         width: 95%;
         text-align: center;
-        height: 70%;
+        /* height: 70%; */
+        height: auto;
         display: inline-block;
     }
     #wrapper .price .box-price .content {
