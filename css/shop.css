@@ -1,0 +1,328 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    margin:0;
+    padding: 0;
+    font-family: 'source sans pro',sans-serif;
+}
+#wrapper{
+    height: 100%;
+    width: 100%;
+}
+#wrapper .head{
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  z-index: 2;
+  background:white;
+}
+#wrapper .head nav{
+    min-height: 58px;
+}
+#wrapper .head nav ul{
+    height: 75px;
+    margin: 0px 40px;
+    font-size: 0;
+    padding: 0;
+  }
+#wrapper .head nav ul li{
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    top: 30px;
+    font-size: 16px;
+    font-weight: 100;
+    color: #303030;
+    letter-spacing: 1.2px;
+    padding: 0px 3rem;
+    text-transform: uppercase;
+    font-family: 'Source sans pro', sans-serif;
+    cursor: pointer;
+}
+#wrapper .head nav ul li.left{
+  float: left;
+  top: 12px !important;
+  padding: 0;
+  text-transform: uppercase;
+}
+#wrapper .head nav ul li.left img{
+  width: 3rem;
+  margin: 5px;
+  height: 3rem;
+  margin-left: -0.2rem;
+}
+#wrapper .container{
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+#wrapper .container .background{
+    position: relative;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/background.jpg');
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+#wrapper .container .text{
+    width: 100%;
+    text-align: center;
+    font-size:2rem;
+    color:white;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+#wrapper .time{
+    width:100%;
+    text-align: center;
+    height: 50%;
+}
+#wrapper .time .box-time{
+    width: 50%;
+    display: inline-block;
+    margin-top:2rem;
+}
+#wrapper .time .box-time .title{
+    height: 4rem;
+    width:100%;
+    display: table;
+}
+#wrapper .time .box-time .title span{
+    font-size: 2rem;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    display: table-cell;
+}
+#wrapper .time .box-time .content{
+    width: 100%;
+    height: 10rem;
+    display: table;
+}
+#wrapper .time .box-time .content span{
+    vertical-align: middle;
+}
+#wrapper .banner-container{
+    width: 100%;
+    height: 40%;
+}
+#wrapper .banner-container .banner{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url('../img/background.jpg');
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+}
+#wrapper .price{
+    width:100%;
+    text-align: center;
+    height: 70%;
+}
+#wrapper .price .box-price{
+    width: 50%;
+    display: inline-block;
+    margin-top:2rem;
+}
+#wrapper .price .box-price .title{
+    height: 6rem;
+    width:100%;
+    display: table;
+}
+#wrapper .price .box-price .title span{
+    vertical-align: middle;
+    font-size:2rem;
+    width: 100%;
+    height: 100%;
+    display: table-cell;
+}
+#wrapper .price .box-price .content{
+    width: 100%;
+    height: 10rem;
+    display: table;
+}
+#wrapper .price .box-price .content .precio{
+    font-size: 4rem;
+    width: 100%;
+    text-align: center;
+    height: 7rem;
+}
+#wrapper .price .box-price .content span{
+    vertical-align: middle;
+    display: inline-block;
+    height: 9rem;
+}
+#wrapper .why{
+    width: 100%;
+    height: 50%;
+    margin-top: 2rem;
+}
+#wrapper .why .title{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    display: table;
+}
+#wrapper .why .title span{
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 2rem;
+}
+#wrapper .why .content{
+    width: 100%;
+    text-align: center;
+}
+#wrapper .why .content .row{
+    width: 33%;
+    display: inline-block;
+}
+#wrapper .why .content .row .title{
+    text-align: center;
+    font-size: 1.5rem;
+}
+#wrapper .quest{
+    width: 100%;
+    text-align: center;
+    height: 4rem;
+}
+#wrapper .quest span{
+    font-size: 1.5rem;
+}
+#wrapper .quest span a{
+    /* color:black; */
+    text-decoration: none;
+}
+#wrapper .quest2{
+    width: 100%;
+    text-align: center;
+    height: 5rem;
+    background-color: #ff480c;
+    display: table;
+}
+#wrapper .quest2 span{
+    font-size: 1.5rem;
+    display: table-cell;
+    vertical-align: middle;
+    color:white;
+}
+#wrapper .quest2 span a{
+    text-decoration: none;
+}
+#wrapper footer{
+    background-color:#303030;
+    height: 20%;
+    width: 100%;
+}
+#wrapper footer .box{
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+#wrapper footer .box .manki{
+    width: 20%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+#wrapper footer .box .manki .manki-white{
+    width: 2rem;
+    height: 2rem;
+    background-image: url('../img/manki_white.png');
+    background-size:100% 100%;
+    background-position:center;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+#wrapper footer .box .text{
+    width: 80%;
+    display: table-cell;
+    vertical-align: middle;
+}
+#wrapper footer .box .text span{
+    font-size: 1rem;
+    color:white;
+}
+.box-button{
+    width: 100%;
+}
+.box-button button{
+    width: 40%;
+    border-radius: 10px;
+    height: 3rem;
+    background-color: #ff480c;
+    color:white;
+    border: 0;
+    text-transform: uppercase;
+}
+@media (max-width:450px){
+    .head nav ul{
+        display: none;
+    }
+    #wrapper .container{
+        width: 100%;
+        height: 40%;
+        position: relative;
+    } 
+    #wrapper .time {
+        width: 95%;
+        text-align: center;
+        height: 65%;
+        display: inline-block;
+    }
+    #wrapper .time .box-time{
+        width: 100%;
+        display: inline-block;
+        margin-top: 2rem;
+    }
+    #wrapper .time .box-time .content {
+        width: 100%;
+        height: 12rem;
+        display: table;
+    }
+    #wrapper .container .background {
+        background-attachment: inherit;        
+    }
+    #wrapper .price .box-price {
+        width: 100%;
+        display: inline-block;
+        margin-top: 2rem;
+    }
+    #wrapper .price {
+        width: 95%;
+        text-align: center;
+        height: 85%;
+        display: inline-block;
+    }
+    #wrapper .price .box-price .content {
+        width: 100%;
+        height: 18rem;
+        display: table;
+    }
+    #wrapper .why {
+        height: auto;
+    }
+    #wrapper .why .content .row {
+        width: 95%;
+        display: inline-block;
+        margin:2rem 0;
+    }
+    #wrapper .quest span {
+        font-size: 1rem;
+    }
+    #wrapper .quest2 span {
+        font-size: 0.7rem;
+    }
+    #wrapper footer .box .text span {
+        font-size: 0.5rem;
+        color: white;
+    }
+}

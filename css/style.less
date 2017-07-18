@@ -1,0 +1,189 @@
+@color_1: #ff480c;
+@color_2: white;
+@font_family_1: 'source sans pro';
+@background_color_1: #4da8e9;
+
+/*desktop*/
+html {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: @font_family_1;
+	letter-spacing: .5px;
+}
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: @font_family_1;
+	letter-spacing: .5px;
+}
+.active {
+	color: @color_1 !important;
+}
+.container {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-image: url('../img/background.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	.languages {
+		position: absolute;
+		right: 2rem;
+		top: 1rem;
+		color: @color_2;
+		z-index: 4;
+		a {
+			cursor: pointer;
+			color: @color_2;
+			text-decoration: none;
+			font-weight: 100;
+		}
+	}
+	.row {
+		width: 50%;
+		display: inline-block;
+		height: 100%;
+		vertical-align: top;
+		position: relative;
+		.one {
+			width: 100%;
+			height: 70%;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			-webkit-transform: translate(-50%, -50%);
+			.container-logo {
+				width: 100%;
+				position: relative;
+				height: 15%;
+				margin-top: 20%;
+				.box-logo {
+					width: 100%;
+					height: 100%;
+					text-align: center;
+					.logo {
+						background-image: url('../img/logo.svg');
+						background-position: center;
+						background-size: 100% 100%;
+						background-repeat: no-repeat;
+						width: 4rem;
+						height: 4rem;
+						display: inline-block;
+						vertical-align: middle;
+					}
+					.name {
+						display: inline-block;
+						color: @color_1;
+						font-size: 2rem;
+						width: 20%;
+						vertical-align: middle;
+					}
+				}
+			}
+			.container-text {
+				width: 100%;
+				position: relative;
+				text-align: center;
+				height: 16rem;
+				.messenger {
+					width: 100%;
+					height: 3rem;
+					text-align: center;
+					position: relative;
+					button {
+						width: 40%;
+						display: inline-block;
+						height: 3rem;
+						color: @color_2;
+						background-color: @background_color_1;
+						border-radius: 10px;
+						border: 0;
+						font-size: 0.9rem;
+						font-weight: 300;
+						margin-top: 1rem;
+					}
+				}
+				.text {
+					width: 70%;
+					display: inline-block;
+					color: @color_2;
+					text-align: center;
+					font-weight: 100;
+					font-size: 1.8rem;
+				}
+			}
+		}
+		.two {
+			width: 100%;
+			height: 100%;
+			position: relative;
+			.image {
+				width: 20rem;
+				height: 35rem;
+				background-image: url(../img/iphone.png);
+				background-position: center;
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				-webkit-transform: translate(-50%, -50%);
+			}
+			.messenger {
+				width: 100%;
+				height: 3rem;
+				text-align: center;
+				position: relative;
+			}
+			button {
+				width: 80%;
+				display: inline-block;
+				height: 3rem;
+				color: @color_2;
+				background-color: @background_color_1;
+				border-radius: 10px;
+				border: 0;
+				margin-left: 12%;
+				font-size: 0.9rem;
+				font-weight: 300;
+			}
+		}
+	}
+}
+@media (max-width:500px) {
+	#r2 {
+		display: none;
+	}
+	.container {
+		background-image: url('../img/background_mobile.jpg');
+		.row {
+			width: 100%;
+			.one {
+				.container-logo {
+					width: 100%;
+					position: relative;
+					height: 15%;
+					margin-top: 10%;
+					margin-bottom: 1rem;
+				}
+				.container-text {
+					.text {
+						width: 70%;
+						display: inline-block;
+						color: @color_2;
+						text-align: center;
+						font-weight: 100;
+						font-size: 1.5rem;
+					}
+				}
+			}
+		}
+	}
+}
