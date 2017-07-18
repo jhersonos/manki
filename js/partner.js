@@ -27,18 +27,24 @@ $(document).ready(function(){
     $('#send').click(function(){
         var data = {
             name    : $('#nombre').val(),
-            empresa : $('#empresa').val(),
-            correo  : $('#correo').val(),
-            numero  : $('#numero').val()
+            email  : $('#correo').val(),
+	    company: {
+		 extra: {
+			numero  : $('#numero').val()
+		 },
+		 name : $('#empresa').val()
+	    }
         }
         var url = "";
         if(data.name != "" && data.empresa != "" && data.correo !="" && data.numero !=""){
             $.ajax({
                 type: "POST",
-                url: url,
+                url: 'http://localhost:3000/partner',
                 data: data,
-                success: success,
-                dataType: dataType
+                success: function(res) {
+			console.log(res)
+		},
+                dataType: 'json'
             });
         }else{
             alert('Complete los datos correctamente');
