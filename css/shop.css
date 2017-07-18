@@ -4,7 +4,7 @@ html,body{
     margin:0;
     padding: 0;
     font-family: 'source sans pro',sans-serif;
-    color:#808080;
+    color:#505050;
 }
 
 /* The Modal (background) */
@@ -202,6 +202,9 @@ form .field textarea{
   margin: 5px;
   height: 3rem;
   margin-left: -0.2rem;
+}
+#wrapper .head nav ul li.menu{
+    display: none;
 }
 #wrapper .container{
     width: 100%;
@@ -487,6 +490,18 @@ form .field textarea{
         width: 40%;
     }
     /* end modal  */
+    #wrapper .head nav ul li.menu{
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+        vertical-align: top;
+        position: relative;
+        top: 1.5rem;
+    }
+    #wrapper .head nav ul li.menu img{
+        width: 100%;
+        height: 100%;
+    }
     .mobile{
         width: 50% !important;
     }
@@ -593,6 +608,7 @@ form .field textarea{
     .banner-text{
         width: 100%;
         line-height: 1.5rem;
+        line-height: 1;
     }
     #wrapper .banner-container .banner{
         background-attachment:inherit;
