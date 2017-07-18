@@ -6,7 +6,12 @@ html,body{
     font-family: 'source sans pro',sans-serif;
     color:#505050;
 }
-
+.nth{
+    position: absolute;
+    top: 1.9rem;
+    font-size: .8rem;
+    left: 9rem;
+}
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -316,11 +321,15 @@ form .row{
     margin:2rem 0;
 }
 #wrapper .price .box-price{
-    width: 50%;
+    width: 25%;
+    margin: 0 2rem;
     display: inline-block;
-    margin-top:2rem;
+    padding-right: 1rem;
+    margin-top: 2rem;
+    border-right: .5px solid rgba(220, 213, 213, 0.79);
 }
 #wrapper .price .box-price .title{
+    position: relative;
     height: 2rem;
     width:100%;
     display: table;
@@ -342,22 +351,27 @@ form .row{
 .pr{
     font-size:0.8rem !important;
     font-weight: 400 !important;
+    width: 75%;
 }
 #wrapper .price .box-price .content{
     width: 100%;
     height: 10rem;
     display: table;
+    margin-bottom:1rem;
+}
+#wrapper .price .box-price .content .no-promo{
+    height: 8.5rem !important;
 }
 #wrapper .price .box-price .content .precio{
     font-size: 4rem;
     width: 100%;
     text-align: center;
-    height: 8rem;
+    height: 10rem;
 }
 #wrapper .price .box-price .content span{
     vertical-align: middle;
     display: inline-block;
-    height: 7rem;
+    /* height: 7rem; */
     font-size: 1rem;
     letter-spacing: .8px;
     font-weight: 100;
@@ -498,7 +512,7 @@ form .row{
 }
 .box-button button{
     cursor:pointer;
-    width: 40%;
+    width: 50%;
     border-radius: 10px;
     height: 3rem;
     background-color: #ff480c;

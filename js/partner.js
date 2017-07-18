@@ -31,7 +31,7 @@ $(document).ready(function(){
 	    company: {
 		 extra: {
             numero  : $('#numero').val(),
-            comentrario  : $('#comentario').val()
+            comentario  : $('#comentario').val()
 		 },
 		 name : $('#empresa').val()
 	    }
@@ -44,7 +44,11 @@ $(document).ready(function(){
                 data: data,
                 success: function(res) {
                 console.log(res)
-                // if(){}        
+                if(res.created == true || res.created == "true"){
+                    alert("Listo!")
+                }else{
+                    alert("Falta")
+                }        
 		    },
                 dataType: 'json'
             });
