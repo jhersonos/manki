@@ -4,10 +4,157 @@ html,body{
     margin:0;
     padding: 0;
     font-family: 'source sans pro',sans-serif;
+    color:#808080;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color:rgba(255, 255, 255, .8); /* Fallback color */
+    /* background-color: rgba(0,0,0,0.4);  Black w/ opacity  */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    /* border: 1px solid #888; */
+    /* width: 80%; */
+    width: 60%;
+    opacity: .8;
+}
+.modal-footer{
+    text-align: center;
+    margin: 1rem 0;
+}
+.modal-footer button{
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+form{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+form .field{
+    display: block;
+}
+form .field label{
+    display: inline-block;
+    width: 65%;
+    text-align: left;
+}
+form .fields{
+    margin: 2rem 0;
+    width: 100%;
+}
+form .fields .field{
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+}
+form .field input[type="text"]{
+    /* border-radius: 10px; */
+    width: 65%;
+    height: 2rem;
+    border:0;
+    border-bottom:1px solid #303030;
+    /* border: 1px solid #303030; */
+    margin: 1rem 0;
+}
+::-webkit-input-placeholder{
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 0;
+    color:#dadada;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+form .field textarea{
+    width: 73%;
+    border-radius: 10px;
+    height: 10rem;
+}
+.send{
+    display: inline-block;
+    width: 25%;
+    height: 2rem;
+    border-radius: 10px;
+    background: #ff480c;
+    color: white;
+    border: 0;
+    font-size: 1rem;
+}
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.mobile{
+    width: auto;
+}
+.r{
+    width: 33% !important;
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 100;
+}
+.right{
+    float: right;
+    position: relative;
+    right: 2%;
+    font-weight: 200;
+}
+.center{
+    left: 50% !important;
+    text-align: center;
+    font-size:1rem !important;
+    text-transform: uppercase;
+}
+.banner-text{
+    position: absolute;
+    left: 22%;
+    font-size: 2rem;
+    color: white;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+.banner-smart{
+    background-image:url('../img/banner.jpg') !important;
+}
+.num{
+    height: 5rem !important;
+    letter-spacing: -2.9px !important;
+    font-size:4rem !important;
+    color:#ff480c;
+    font-weight: 400 !important;
 }
 #wrapper{
     height: 100%;
     width: 100%;
+    text-align: center;
 }
 #wrapper .head{
   width: 100%;
@@ -24,10 +171,12 @@ html,body{
     margin: 0px 40px;
     font-size: 0;
     padding: 0;
+    width: 83%;
+    display: inline-block;
   }
 #wrapper .head nav ul li{
     list-style: none;
-    display: inline-block;
+    /* display: inline-block; */
     vertical-align: top;
     position: relative;
     top: 30px;
@@ -35,8 +184,10 @@ html,body{
     font-weight: 100;
     color: #303030;
     letter-spacing: 1.2px;
-    padding: 0px 3rem;
-    text-transform: uppercase;
+    padding: 0px 2rem;
+    padding-right: 0;
+    float: right;
+    /* text-transform: uppercase; */
     font-family: 'Source sans pro', sans-serif;
     cursor: pointer;
 }
@@ -54,7 +205,7 @@ html,body{
 }
 #wrapper .container{
     width: 100%;
-    height: 50%;
+    height: 60%;
     position: relative;
 }
 #wrapper .container .background{
@@ -70,22 +221,25 @@ html,body{
 #wrapper .container .text{
     width: 100%;
     text-align: center;
+    font-weight: 200;
+    letter-spacing: .8px;
     font-size:2rem;
     color:white;
     text-transform: uppercase;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 60%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
 }
 #wrapper .time{
     width:100%;
     text-align: center;
-    height: 50%;
+    height: 44%;
+    margin:2rem 0;
 }
 #wrapper .time .box-time{
-    width: 50%;
+    width: 65%;
     display: inline-block;
     margin-top:2rem;
 }
@@ -95,7 +249,8 @@ html,body{
     display: table;
 }
 #wrapper .time .box-time .title span{
-    font-size: 2rem;
+    font-weight: 300;
+    font-size: 1.7rem;
     vertical-align: middle;
     width: 100%;
     height: 100%;
@@ -103,11 +258,14 @@ html,body{
 }
 #wrapper .time .box-time .content{
     width: 100%;
-    height: 10rem;
+    height: 7rem;
     display: table;
 }
 #wrapper .time .box-time .content span{
     vertical-align: middle;
+    font-weight: 100;
+    letter-spacing: .8px;
+    position: relative;
 }
 #wrapper .banner-container{
     width: 100%;
@@ -126,7 +284,8 @@ html,body{
 #wrapper .price{
     width:100%;
     text-align: center;
-    height: 70%;
+    height: 56%;
+    margin:2rem 0;
 }
 #wrapper .price .box-price{
     width: 50%;
@@ -134,16 +293,27 @@ html,body{
     margin-top:2rem;
 }
 #wrapper .price .box-price .title{
-    height: 6rem;
+    height: 2rem;
     width:100%;
     display: table;
 }
 #wrapper .price .box-price .title span{
     vertical-align: middle;
-    font-size:2rem;
+    font-size:1.7rem;
     width: 100%;
     height: 100%;
     display: table-cell;
+    font-weight: 300;
+}
+.sub{
+    font-size:0.9rem;
+    height: 0 !important;
+    position: relative;
+    top: 0.5rem;
+}
+.pr{
+    font-size:0.8rem !important;
+    font-weight: 400 !important;
 }
 #wrapper .price .box-price .content{
     width: 100%;
@@ -154,12 +324,15 @@ html,body{
     font-size: 4rem;
     width: 100%;
     text-align: center;
-    height: 7rem;
+    height: 8rem;
 }
 #wrapper .price .box-price .content span{
     vertical-align: middle;
     display: inline-block;
-    height: 9rem;
+    height: 7rem;
+    font-size: 1rem;
+    letter-spacing: .8px;
+    font-weight: 100;
 }
 #wrapper .why{
     width: 100%;
@@ -168,38 +341,54 @@ html,body{
 }
 #wrapper .why .title{
     width: 100%;
-    height: 20%;
+    height: 25%;
     text-align: center;
     display: table;
 }
 #wrapper .why .title span{
     display: table-cell;
     vertical-align: middle;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: .8px;
 }
 #wrapper .why .content{
     width: 100%;
     text-align: center;
+    font-weight: 100;
 }
 #wrapper .why .content .row{
-    width: 33%;
+    width: 25%;
     display: inline-block;
+    vertical-align: top;
+    margin: 1.5rem;
 }
 #wrapper .why .content .row .title{
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    height: 2rem;
+    font-weight: 400;
+}
+#wrapper .why .content .row .content{
+    text-align: justify;
+    text-justify: inter-word;
 }
 #wrapper .quest{
     width: 100%;
     text-align: center;
     height: 4rem;
+    margin-bottom:2rem;
 }
 #wrapper .quest span{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 100;
+    letter-spacing: .8px;
 }
 #wrapper .quest span a{
     /* color:black; */
     text-decoration: none;
+    color:#ff480c;
+    cursor: pointer;
 }
 #wrapper .quest2{
     width: 100%;
@@ -209,13 +398,38 @@ html,body{
     display: table;
 }
 #wrapper .quest2 span{
+    font-size: 1.3rem;
+    display: table-cell;
+    width: 55%;
+    vertical-align: middle;
+    color: white;
+    text-align: left;
+    position: relative;
+    font-weight: 200;
+    /* left: 6.5rem; */
+    letter-spacing: 1.3px;
+    left: 9%;
+}
+#wrapper .quest2 a{
     font-size: 1.5rem;
     display: table-cell;
     vertical-align: middle;
-    color:white;
-}
-#wrapper .quest2 span a{
     text-decoration: none;
+    text-align: right;
+    position: relative;
+    /* right: 6.5rem; */
+    right: 9.5%;
+    color:white;
+    width: 10rem;
+}
+#wrapper .quest2 a button{
+    width: 10rem;
+    height: 2rem;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 1rem;
 }
 #wrapper footer{
     background-color:#303030;
@@ -227,13 +441,11 @@ html,body{
     height: 100%;
     display: table;
 }
-#wrapper footer .box .manki{
+#wrapper footer .text .manki{
     width: 20%;
-    display: table-cell;
-    vertical-align: middle;
     text-align: center;
 }
-#wrapper footer .box .manki .manki-white{
+#wrapper footer .box .text .manki-white{
     width: 2rem;
     height: 2rem;
     background-image: url('../img/manki_white.png');
@@ -241,20 +453,23 @@ html,body{
     background-position:center;
     background-repeat: no-repeat;
     display: inline-block;
+    top:-0.5rem;
 }
 #wrapper footer .box .text{
     width: 80%;
     display: table-cell;
     vertical-align: middle;
+    text-align: center;
 }
 #wrapper footer .box .text span{
-    font-size: 1rem;
+    font-size: .8rem;
     color:white;
 }
 .box-button{
     width: 100%;
 }
 .box-button button{
+    cursor:pointer;
     width: 40%;
     border-radius: 10px;
     height: 3rem;
@@ -264,6 +479,25 @@ html,body{
     text-transform: uppercase;
 }
 @media (max-width:450px){
+    /* modal  */ 
+    form .field input[type="text"]{
+        width: 90%;
+    }
+    .send{
+        width: 40%;
+    }
+    /* end modal  */
+    .mobile{
+        width: 50% !important;
+    }
+    .r{
+        display: block;
+        width: 100% !important;
+        text-align: center;
+    }
+    #wrapper footer .box .text .manki-white{
+        margin: 1rem 0;
+    }
     .head nav ul{
         display: none;
     }
@@ -274,32 +508,39 @@ html,body{
     } 
     #wrapper .time {
         width: 95%;
+        font-size: 1rem;
         text-align: center;
-        height: 65%;
+        height: 60%;
         display: inline-block;
+    }
+    #wrapper .time .box-time .title span{
+        font-size: 1.4rem;
     }
     #wrapper .time .box-time{
         width: 100%;
         display: inline-block;
-        margin-top: 2rem;
+        margin-top: 0;
     }
     #wrapper .time .box-time .content {
         width: 100%;
-        height: 12rem;
+        height: 13rem;
         display: table;
     }
     #wrapper .container .background {
         background-attachment: inherit;        
     }
+    #wrapper .price .box-price .content .precio{
+        height: 9rem;
+    }
     #wrapper .price .box-price {
-        width: 100%;
+        width: 90%;
         display: inline-block;
-        margin-top: 2rem;
+        margin-top: 0;
     }
     #wrapper .price {
         width: 95%;
         text-align: center;
-        height: 85%;
+        height: 70%;
         display: inline-block;
     }
     #wrapper .price .box-price .content {
@@ -309,6 +550,11 @@ html,body{
     }
     #wrapper .why {
         height: auto;
+        display: inline-block;
+        width: 95%;
+    }
+    #wrapper .why .content .row .content{
+        text-align: center;
     }
     #wrapper .why .content .row {
         width: 95%;
@@ -319,10 +565,76 @@ html,body{
         font-size: 1rem;
     }
     #wrapper .quest2 span {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
+        width: 50%;
     }
     #wrapper footer .box .text span {
         font-size: 0.5rem;
         color: white;
+    }
+    #wrapper .head nav ul li.left{
+        display: block;
+    }
+    #wrapper .head nav ul li{
+        display: none;
+    }
+    .box-button button{
+        width: 55%;
+    }
+    #wrapper .quest2 a button{
+        width: 5rem;
+        height: 2rem;
+        border-radius: 10px;
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+        font-size: 0.7rem;
+    }
+    .banner-text{
+        width: 100%;
+        line-height: 1.5rem;
+    }
+    #wrapper .banner-container .banner{
+        background-attachment:inherit;
+    }
+}
+@media (min-width:1450px){
+    #wrapper .why .content .row{
+        width: 20%;
+    }
+    #wrapper .why{
+        height: 45%;
+    }
+    #wrapper .quest2 span{
+        left: 17.2%;
+    }
+    #wrapper .quest2 a{
+        right: 17.5%;
+    }   
+    #wrapper .time .box-time{
+        width: 40%;
+    }
+    #wrapper .price .box-price{
+        width: 40%;
+    }
+    #wrapper .head nav ul{
+        width: 65%;
+    }
+    .banner-text{
+        left: 26%;
+        width: 40%;
+        display: block;
+    }
+    #wrapper .time{
+        height: 32%;
+    }
+    #wrapper .price{
+        height: 42%;
+    }
+    .r{
+        width: 28% !important;
+    }
+    .right{
+        float: inherit;
     }
 }
