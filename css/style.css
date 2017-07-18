@@ -6,6 +6,7 @@ html,body {
   padding: 0;
   font-family: 'source sans pro';
   letter-spacing: .5px;
+  overflow: hidden;
   /* background:black; */
 }
 .active{
@@ -166,7 +167,7 @@ html,body {
     margin-bottom: 1rem;
   }
   .container .row .one .container-text .text {
-    width: 90%;
+    width: 100%;
     display: inline-block;
     color: white;
     text-align: center;
