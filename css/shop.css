@@ -481,6 +481,14 @@ form .field textarea{
     border: 0;
     text-transform: uppercase;
 }
+@media (max-width:320px){
+  #wrapper .time{
+    height: 70% !important;
+  }
+    #wrapper .price{
+        height: 80% !important;    
+    }
+}
 @media (max-width:450px){
     /* modal  */ 
     form .field input[type="text"]{
