@@ -689,7 +689,7 @@ form .row{
         width: 40%;
     }
     #wrapper .price .box-price{
-        width: 40%;
+        /* width: 40%; */
     }
     #wrapper .head nav ul{
         width: 65%;
