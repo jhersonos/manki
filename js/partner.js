@@ -25,12 +25,14 @@ $(document).ready(function(){
     }
 
     $('#send').click(function(){
-        var name = $('#nombre').val();
-        var empresa = $('#empresa').val();
-        var correo = $('#correo').val();
-        var numero = $('#numero').val();
+        var data = {
+            name    : $('#nombre').val(),
+            empresa : $('#empresa').val(),
+            correo  : $('#correo').val(),
+            numero  : $('#numero').val()
+        }
         var url = "";
-        if(name != "" && empresa != "" && correo !="" && numero !=""){
+        if(data.name != "" && data.empresa != "" && data.correo !="" && data.numero !=""){
             $.ajax({
                 type: "POST",
                 url: url,
