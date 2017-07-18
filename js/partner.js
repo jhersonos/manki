@@ -39,7 +39,7 @@ $(document).ready(function(){
         if(data.name != "" && data.empresa != "" && data.correo !="" && data.numero !=""){
             $.ajax({
                 type: "POST",
-                url: 'http://localhost:3000/partner',
+                url: 'https://sprint01.mankiapp.com/',
                 data: data,
                 success: function(res) {
 			console.log(res)
