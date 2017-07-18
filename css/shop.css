@@ -69,6 +69,15 @@ form .fields .field{
     display: inline-block;
     vertical-align: top;
 }
+form .field input[type="email"]{
+    /* border-radius: 10px; */
+    width: 65%;
+    height: 2rem;
+    border:0;
+    border-bottom:1px solid #303030;
+    /* border: 1px solid #303030; */
+    margin: 1rem 0;
+}
 form .field input[type="text"]{
     /* border-radius: 10px; */
     width: 65%;
@@ -123,6 +132,10 @@ form .field textarea{
     position: relative;
     right: 2%;
     font-weight: 200;
+}
+.right a{
+    color:white !important;
+    text-decoration: none;
 }
 .center{
     left: 50% !important;
@@ -491,6 +504,9 @@ form .field textarea{
 }
 @media (max-width:450px){
     /* modal  */ 
+    form .field input[type="email"]{
+        width: 90%;
+    }
     form .field input[type="text"]{
         width: 90%;
     }
@@ -593,7 +609,7 @@ form .field textarea{
     }
     #wrapper footer .box .text span {
         font-size: 0.5rem;
-        color: white;
+        color: white !important;
     }
     #wrapper .head nav ul li.left{
         display: block;

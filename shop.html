@@ -7,6 +7,7 @@
     <link rel="icon" href="img/favicon.png" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
     <link rel="stylesheet" href="css/shop.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 <div id="wrapper">
@@ -140,7 +141,7 @@
             <div class="text">
                 <span class="r"> © Todos los Derechos Reservados</span>
                 <div class="r manki"><div class="manki-white"></div></div>
-                <span class="r right">991 446 762 / experiencias.manki@manki.la</span>
+                <span class="r right"><a>991 446 762</a> / experiencias.manki@manki.la</span>
             </div>
         </div>
     </footer>
@@ -157,14 +158,14 @@
       <form class="form">
               <div class="field">
                     <!-- <label for="">Nombres:</label> -->
-                    <input type="text" placeholder="Nombre" id="name">
+                    <input type="text" placeholder="Nombre" id="nombre">
               </div><div class="field">
                     <!-- <label for="">Empresa:</label> -->
                     <input type="text" placeholder="empresa" id="empresa">
               </div>  
                 <div class="field">
                     <!-- <label for="">Correo:</label> -->
-                    <input type="text" placeholder="correo" id="correo">
+                    <input type="email" placeholder="correo" id="correo">
                 </div>
                 <div class="field">
                     <!-- <label for="">Numero:</label> -->
@@ -177,7 +178,7 @@
     </div>
     <div class="modal-footer">
       <!-- <h3>Modal Footer</h3> -->
-      <button class="send">Enviar</button>
+      <button id="send" class="send">Enviar</button>
     </div>
   </div>
 </div>
