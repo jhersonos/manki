@@ -525,7 +525,7 @@ form .row{
     height: 70% !important;
   }
     #wrapper .price{
-        height: 80% !important;    
+        height: auto !important;    
     }
 }
 @media (max-width:450px){
@@ -595,13 +595,16 @@ form .row{
         background-attachment: inherit;        
     }
     #wrapper .price .box-price .content .precio{
-        height: 9rem;
+        height: 10rem;
     }
     #wrapper .price .box-price {
         width: 90%;
         display: inline-block;
         margin-top: 0;
-        margin-bottom: 0;
+        padding: 0;
+        margin-bottom: 1.5rem;
+        border: 0;
+        margin: 0;
     }
     #wrapper .price {
         width: 95%;
@@ -610,9 +613,12 @@ form .row{
         height: auto;
         display: inline-block;
     }
+    .box-button{
+        margin-bottom: 2rem;
+    }
     #wrapper .price .box-price .content {
         width: 100%;
-        height: 18rem;
+        height: 16rem;
         display: table;
     }
     #wrapper .why {
