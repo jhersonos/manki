@@ -30,7 +30,8 @@ $(document).ready(function(){
             email  : $('#correo').val(),
 	    company: {
 		 extra: {
-			numero  : $('#numero').val()
+            numero  : $('#numero').val(),
+            comentrario  : $('#comentario').val()
 		 },
 		 name : $('#empresa').val()
 	    }
@@ -39,11 +40,12 @@ $(document).ready(function(){
         if(data.name != "" && data.empresa != "" && data.correo !="" && data.numero !=""){
             $.ajax({
                 type: "POST",
-                url: 'https://sprint01.mankiapp.com/',
+                url: 'https://sprint01.mankiapp.com/partner',
                 data: data,
                 success: function(res) {
-			console.log(res)
-		},
+                console.log(res)
+                // if(){}        
+		    },
                 dataType: 'json'
             });
         }else{

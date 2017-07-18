@@ -9,6 +9,132 @@ html,body {
   overflow: hidden;
   /* background:black; */
 }
+/* modal */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color:rgba(255, 255, 255, .8); /* Fallback color */
+    /* background-color: rgba(0,0,0,0.4);  Black w/ opacity  */
+}
+.title-modal{
+    width: 68%;
+    display: block;
+    margin: 1rem auto;
+    font-weight: 200;
+}
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    /* border: 1px solid #888; */
+    /* width: 80%; */
+    width: 60%;
+    opacity: .8;
+}
+.modal-footer{
+    text-align: center;
+    margin: 1rem 0;
+}
+.modal-footer button{
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+form{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+form .field{
+    display: block;
+}
+form .field label{
+    display: inline-block;
+    width: 65%;
+    text-align: left;
+}
+form .fields{
+    margin: 2rem 0;
+    width: 100%;
+}
+form .fields .field{
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+}
+form .field input[type="email"]{
+    /* border-radius: 10px; */
+    width: 65%;
+    height: 2rem;
+    border:0;
+    border-bottom:1px solid #303030;
+    /* border: 1px solid #303030; */
+    margin: 1rem 0;
+}
+form .field input[type="text"]{
+    /* border-radius: 10px; */
+    width: 65%;
+    height: 2rem;
+    border:0;
+    border-bottom:1px solid #303030;
+    /* border: 1px solid #303030; */
+    margin: 1rem 0;
+}
+::-webkit-input-placeholder{
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 0;
+    color:#dadada;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+form .row{
+  width:50%;
+  display: inline-block;
+}
+form .field textarea{
+    width: 73%;
+    border-radius: 10px;
+    height: 10rem;
+}
+#comentario{
+    width: 80%;
+    height: 12rem;
+    border-radius: 10px;
+}  
+.send{
+    display: inline-block;
+    width: 25%;
+    height: 2rem;
+    border-radius: 10px;
+    background: #ff480c;
+    color: white;
+    border: 0;
+    font-size: 1rem;
+}
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* modal  */
 .active{
   color:#ff480c !important;
 }
@@ -52,6 +178,51 @@ html,body {
   vertical-align: top;
   position: relative;
 }
+.container .row .one .redes{
+  width: 100%;
+  height: 3rem;
+  /* position: absolute;
+  bottom: -10%; */
+  text-align: center;
+}
+.container .row .one .redes .item{
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0.5rem 0.2rem;
+  opacity: 0.6;
+  border-radius: 50%;
+  display: inline-block;
+  background-position: center;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+#fb{
+  background-image: url('../img/fb.png');
+}
+#instagram{
+  background-image: url('../img/insta.png');
+}
+#medium{
+  background-image: url('../img/medium.png');
+}
+#pinterest{
+  background-image: url('../img/pinterest.png');
+}
+#spotify{
+  background-image: url('../img/spotify.png');
+}
+.container .row .one .foot-text{
+  text-align: center;
+  width: 100%;
+}
+.container .row .one .foot-text a{
+  color:white;
+  font-size: 0.8rem;
+  font-weight: 100;
+  text-decoration: underline;
+  cursor:pointer;
+}
 .container .row .one{
   width: 100%;
   height: 70%;
@@ -65,7 +236,7 @@ html,body {
   width: 100%;
   position: relative;
   height: 15%;
-  margin-top:10%;
+  /* margin-top:10%; */
 }
 .container .row .one .container-logo .box-logo{
   width:100%;
@@ -93,7 +264,8 @@ html,body {
   width: 100%;
   position: relative;
   text-align: center;
-  height: 16rem;
+  /* height: 16rem; */
+  height: auto;
 }
 .container .row .one .container-text .messenger{
   width:100%;
@@ -116,6 +288,7 @@ html,body {
   cursor: pointer;
 }
 .container .row .one .container-text .text{
+  position: relative;
   width: 78%;
   display: inline-block;
   color:white;

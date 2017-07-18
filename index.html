@@ -27,12 +27,24 @@
                 <div class="container-text">
                     <div class="text">
                         ¡Hola!<br>
-                        Soy Manki, tu Smart Travel Buddy en Facebook Messenger. Te ayudo con información y recomendaciones de manera gratuita para tus viajes. Escríbeme para comenzar a planear juntos tu viaje.
+                        Soy Manki, tu Smart Travel Buddy en Facebook Messenger. 
+                        Te ayudo con información y recomendaciones de manera gratuita 
+                        para tus viajes. Escríbeme para comenzar a planear juntos tu viaje.
                     </div>
                     <a href="https://www.messenger.com/t/mankiapp" class="messenger">
                         <button>Messenger</button>
                     </a>
-                </div>        
+                </div> 
+                <div class="redes">
+                    <a href="#" class="item" id="fb"></a>
+                    <a href="#" class="item" id="instagram"></a>
+                    <a href="#" class="item" id="medium"></a>
+                    <a href="#" class="item" id="pinterest"></a>
+                    <a href="#" class="item" id="spotify"></a>
+                </div>       
+                <div class="foot-text">
+                    <a id="myBtn">Trabaja con nosotros</a>
+                </div>
             </div>
         </div><div class="row" id="r2">
             <div class="two">
@@ -43,6 +55,46 @@
             </div>
         </div>
     </div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+       <h2 class="title-modal">Déjanos tus datos para contactarte.</h2> 
+    </div>
+    <div class="modal-body">
+      <form class="form">
+            <div class="row">
+              <div class="field">
+                    <!-- <label for="">Nombres:</label> -->
+                    <input type="text" placeholder="Nombre" id="nombre">
+              </div><div class="field">
+                    <!-- <label for="">Empresa:</label> -->
+                    <input type="text" placeholder="empresa" id="empresa">
+              </div>  
+                <div class="field">
+                    <!-- <label for="">Correo:</label> -->
+                    <input type="email" placeholder="correo" id="correo">
+                </div>
+                <div class="field">
+                    <!-- <label for="">Numero:</label> -->
+                    <input type="text" placeholder="numero" id="numero">
+                </div>  
+            <!-- <div class="field">
+                <textarea name="" id="mensaje"></textarea>
+            </div> -->
+            </div><div class="row">
+                <textarea id="comentario"></textarea>
+            </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <!-- <h3>Modal Footer</h3> -->
+      <button id="send" class="send">Enviar</button>
+    </div>
+  </div>
+</div>
 <script   src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
 </body>

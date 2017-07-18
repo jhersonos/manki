@@ -21,7 +21,12 @@ html,body{
     background-color:rgba(255, 255, 255, .8); /* Fallback color */
     /* background-color: rgba(0,0,0,0.4);  Black w/ opacity  */
 }
-
+.title-modal{
+    width: 68%;
+    display: block;
+    margin: 1rem auto;
+    font-weight: 200;
+}
 /* Modal Content */
 .modal-content {
     background-color: #fefefe;
@@ -116,8 +121,15 @@ form .field textarea{
     text-decoration: none;
     cursor: pointer;
 }
-
-
+form .row{
+  width:50%;
+  display: inline-block;
+}
+#comentario{
+    width: 80%;
+    height: 12rem;
+    border-radius: 10px;
+} 
 .mobile{
     width: auto;
 }
