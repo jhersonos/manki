@@ -198,19 +198,19 @@ form .field textarea{
   cursor: pointer;
 }
 #fb{
-  background-image: url('../img/fb.png');
+  background-image: url('https://s3-sa-east-1.amazonaws.com/manki/static/assets/ssl/fb.png');
 }
 #instagram{
-  background-image: url('../img/insta.png');
+  background-image: url('https://s3-sa-east-1.amazonaws.com/manki/static/assets/ssl/insta.png');
 }
 #medium{
-  background-image: url('../img/medium.png');
+  background-image: url('https://s3-sa-east-1.amazonaws.com/manki/static/assets/ssl/medium.png');
 }
 #pinterest{
-  background-image: url('../img/pinterest.png');
+  background-image: url('https://s3-sa-east-1.amazonaws.com/manki/static/assets/ssl/pinterest.png');
 }
 #spotify{
-  background-image: url('../img/spotify.png');
+  background-image: url('https://s3-sa-east-1.amazonaws.com/manki/static/assets/ssl/spotify.png');
 }
 .container .row .one .foot-text{
   text-align: center;
@@ -244,7 +244,7 @@ form .field textarea{
   text-align: center;
 }
 .container .row .one .container-logo .box-logo .logo{
-  background-image: url('../img/logo.svg');
+  background-image: url('https://s3-sa-east-1.amazonaws.com/manki/static/assets/ssl/logo.svg');
   background-position: center;
   background-size:100% 100%;
   background-repeat:no-repeat;
@@ -304,7 +304,7 @@ form .field textarea{
 .container .row .two .image{
     width: 20rem;
     height: 35rem;
-    background-image: url(../img/iphone.png);
+    background-image: url("https://s3-sa-east-1.amazonaws.com/manki/static/assets/ssl/iphone.png");
     background-position: center;
     background-size: 100% 100%;
     background-repeat: no-repeat;

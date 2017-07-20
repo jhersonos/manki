@@ -173,7 +173,7 @@ form .row{
     letter-spacing: 1px;
 }
 .banner-smart{
-    background-image:url('../img/banner.jpg') !important;
+    background-image:url('https://s3-sa-east-1.amazonaws.com/manki/static/assets/ssl/banner.jpg') !important;
 }
 .num{
     height: 5rem !important;
@@ -247,7 +247,7 @@ form .row{
     background-attachment: fixed;
     width: 100%;
     height: 100%;
-    background-image: url('../img/background.jpg');
+    background-image: url('https://s3-sa-east-1.amazonaws.com/manki/static/assets/ssl/background.jpg');
     background-position: center;
     background-size:cover;
     background-repeat: no-repeat;
@@ -309,7 +309,7 @@ form .row{
     width: 100%;
     height: 100%;
     position: relative;
-    background-image: url('../img/background.jpg');
+    background-image: url('https://s3-sa-east-1.amazonaws.com/manki/static/assets/ssl/background.jpg');
     background-size:cover;
     background-position: center;
     background-repeat:no-repeat;
@@ -504,7 +504,7 @@ form .row{
 #wrapper footer .box .text .manki-white{
     width: 2rem;
     height: 2rem;
-    background-image: url('../img/manki_white.png');
+    background-image: url('https://s3-sa-east-1.amazonaws.com/manki/static/assets/ssl/manki_white.png');
     background-size:100% 100%;
     background-position:center;
     background-repeat: no-repeat;
