@@ -33,9 +33,9 @@ $(document).ready(function(){
             body:"Hi!<br> I'm Manki, your Smart Travel Buddy on Facebook Messenger, I help you with information and recommendations for your travels for free. Message me to start planning your trip together."
         },
         back:[
-            "http://www.latinotravel.com.pe/wp-content/uploads/2015/08/Ruinas_majestuosas.jpg",
-            "http://www.latinotravel.com.pe/wp-content/uploads/2015/08/Ruinas_majestuosas.jpg",
-            "http://www.viajestdh.com.ar/wp-content/uploads/cuzco-plaza-armas.jpg",
+            "https://www.apuntesdehistoria.net/wp-content/uploads/2016/04/rio-amazonas.jpg",
+            "https://www.latinotravel.com.pe/wp-content/uploads/2015/08/Ruinas_majestuosas.jpg",
+            "https://s.latamstatic.com/destinosudamerica/wp-content/uploads/2015/09/Calle-de-Cuzco-1024x683.jpg",
             "https://s.latamstatic.com/destinosudamerica/wp-content/uploads/2015/09/Calle-de-Cuzco-1024x683.jpg"
         ]
     }
