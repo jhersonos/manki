@@ -318,7 +318,7 @@ form .row{
 #wrapper .price{
     width:100%;
     text-align: center;
-    height: 58%;
+    height: 52%;
     margin:2rem 0;
 }
 #wrapper .price .box-price{
@@ -327,7 +327,7 @@ form .row{
     display: inline-block;
     padding-right: 1rem;
     margin-top: 1rem;
-    border-right: .5px solid rgba(220, 213, 213, 0.79);
+    /* border-right: .5px solid rgba(220, 213, 213, 0.79); */
 }
 #wrapper .price .box-price .title{
     position: relative;
@@ -337,11 +337,11 @@ form .row{
 }
 #wrapper .price .box-price .title span{
     vertical-align: middle;
-    font-size:1.7rem;
+    font-size:1.3rem;
     width: 100%;
     height: 100%;
     display: table-cell;
-    font-weight: 300;
+    font-weight: 100;
 }
 .sub{
     font-size:0.9rem;
@@ -364,7 +364,8 @@ form .row{
     display: table-cell;
     vertical-align: middle;
     font-size: 1.5rem;
-    font-weight: 300;
+    font-weight: 400;
+    text-transform: uppercase;
     letter-spacing: .8px;
 }
 #wrapper .price .box-price .content{
@@ -380,7 +381,7 @@ form .row{
     font-size: 4rem;
     width: 100%;
     text-align: center;
-    height: 10rem;
+    height: 8rem;
 }
 #wrapper .price .box-price .content span{
     vertical-align: middle;
