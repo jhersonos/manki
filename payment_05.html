@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+      <script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
+      <script src="https://checkout.culqi.com/v2"></script>
+      <script>
+          Culqi.publicKey = 'pk_test_hcXaOlhZGwJWXdv3'
+          Culqi.settings({
+              title: 'Suscripción',
+              currency: 'PEN',
+              description: 'Suscripción mensual en Manki',
+              amount: 20  * 100
+          })
+          Culqi.open()
+          function culqi () {
+            if (Culqi.token) {
+              console.log('ok')
+           var data = {
+                token_card: Culqi.token.id,
+                email: Culqi.token.email
+           }
+            $.ajax({
+                type: "POST",
+                url: 'https://sprint01.mankiapp.com/partner/subscribe?key=demo20',
+                data: data,
+                success: function(res) {
+                        console.log(res)
+                        alert('En breves momentos nos contactaremos contigo')
+
+                },
+                dataType: 'json'
+            });
+            } else {
+              console.log(Culqi.error)
+            }
+          }
+      </script>
+    </body>                        
+</html>
